@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Zuhair Abbas | Portfolio</title>
+      
+        <!-- Main CSS -->
+        <link rel="stylesheet" href="styles.css" />
+      
+        <!-- Google Fonts -->
+        <link
+          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@300;400;700&display=swap"
+          rel="stylesheet"
+        />
+      
+        <!-- EmailJS Library -->
+        <script
+          type="text/javascript"
+          src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+        </script>
+      
+        <!-- Particle.js Library -->
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+      </head>
+      <body>
+    <!-- Particle Background -->
+<div id="particles-js"></div>
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">Zuhair | Abbas</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="home">
+    <div class="hero-content">
+      <!-- Replace with your personal photo -->
+      <img src="IMG_2562.jpeg" alt="Zuhair Abbas" class="profile-img" />
+      <h1>Zuhair Abbas</h1>
+      <p>Aspiring Software Engineer | Innovator &amp; Leader</p>
+      <a href="#about" class="scroll-btn">Discover More</a>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+<!-- About Section -->
+<section id="about">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <img src="gym.jpg" alt="Gym Photo" class="about-img" />
+      <div class="about-text">
+        <p>
+          I'm a 2nd year student at Queen’s University with a passion for technology and creative problem-solving. 
+          I love tackling real-world challenges and using the latest tools to build solutions that make a difference. 
+          When I’m not working with tech, you’ll usually find me playing sports or hitting the gym—staying active helps me stay energized and focused.
+        </p>
+      </div>
+    </div>
+  </section>
+      
+    <!-- Education Section -->
+    <section id="education">
+      <div class="section-container">
+        <h2>Education</h2>
+        <div class="card">
+          <!-- Queen's University image -->
+          <img src="queens.jpg" alt="Queen's University" class="edu-img" />
+          <h3>Queen’s University, Kingston, Ontario</h3>
+          <p>Bachelor of Science in Computer Engineering</p>
+          <p><strong>Expected Graduation:</strong> May 2027</p>
+          <p>
+            <strong>Related Coursework:</strong> Intro to Computer Programming, Elements of Computing Science, Discrete Structures
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+      <div class="section-container">
+        <h2>Experience</h2>
+
+        <!-- Microbonds Inc. -->
+        <div class="experience-card">
+          <!-- Replace with the correct logo or remove if not needed -->
+          <img src="ventureforcanada.png" alt="Microbonds" class="company-logo" />
+          <div class="experience-card-content">
+            <h3>Market Research Intern, Microbonds Inc. (Remote)</h3>
+            <p class="date">October 2024 – January 2025</p>
+            <ul>
+              <li>Developed ideal customer profiles (ICPs) and built targeted lead generation lists for B2B clients.</li>
+              <li>Researched and integrated AI tools for graphic design, social media content creation, and product ideation.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Mikhaiel Logistics -->
+        <div class="experience-card">
+          <img src="mikhaiel.jpg" alt="Mikhaiel Logistics" class="company-logo" />
+          <div class="experience-card-content">
+            <h3>Quality Control Technician, Mikhaiel Logistics</h3>
+            <p class="date">June 2024 – September 2024 | Oakville, Ontario</p>
+            <ul>
+              <li>Inspected and tested products and materials to ensure they meet company quality standards and compliance requirements.</li>
+              <li>Documented and reported quality issues, deviations, and improvements to maintain operational efficiency and product integrity.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Walmart -->
+        <div class="experience-card">
+          <img src="walmart.png" alt="Walmart" class="company-logo" />
+          <div class="experience-card-content">
+            <h3>Customer Service Representative, Walmart</h3>
+            <p class="date">July 2021 – September 2023 | Milton, Ontario</p>
+            <ul>
+              <li>Assisted customers with inquiries, returns, exchanges, and product information to ensure a positive shopping experience.</li>
+              <li>Processed transactions at the customer service desk, handle refunds, resolve complaints, and support store operations.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- Projects Section -->
+<section id="projects">
+    <div class="section-container">
+      <h2>Projects</h2>
+  
+      <!-- Arthritis Friendly Doorknob Card with Images -->
+      <div class="card arthritis-project">
+        <h3>
+          <a href="https://github.com/zuhairabbas1/ArthritisDoorknob" target="_blank">
+            Arthritis Friendly Doorknob
+          </a>
+        </h3>
+        <p class="date">Team Lead | January 2024 – February 2024, Hamilton, Ontario</p>
+  
+        <!-- Two new images: the door & 3D-printed handle -->
+        <div class="arthritis-images">
+          <img src="IMG_2012.jpeg" alt="Arthritis Doorknob Full Door" class="project-img" />
+          <img src="IMG_7888.jpeg" alt="3D Printed Arthritis Handle" class="project-img" />
+        </div>
+  
+        <p>
+          <li>Redesigned door interaction using CAD software to aid individuals with arthritis.</li>
+          <li>Created an ergonomic lever to minimize painful gripping.</li>
+          <li>Developed a 3D-printed component that attaches to a standard door.</li>
+          <li>Enabled users to open doors with minimal wrist strain.</li>
+          </p>
+      </div>
+  
+      <!-- Campus Food Delivery App Card (unchanged) -->
+      <div class="card">
+        <h3>Campus Food Delivery App</h3>
+        <p class="date">Co-CEO | October 2024 – Present, Kingston, Ontario</p>
+        <p>
+          <li>Developing a dedicated app to simplify on-campus orders for Queen's University students.</li>
+          <li>Building an intuitive interface using React Native for cross-platform compatibility.</li>
+          <li>Enhancing the overall user experience through streamlined order processes.</li>
+          <li>Designed for convenience, it ensures fast, affordable, and hassle-free food delivery within campus.</li>
+          </p>
+      </div>
+    </div>
+  </section>
+
+<!-- Skills Section -->
+<section id="skills">
+    <div class="section-container">
+      <h2>Skills</h2>
+      <div class="skill-grid">
+        <div class="skill-card">Javascript</div>
+        <div class="skill-card">Python</div>
+        <div class="skill-card">C++</div>
+        <div class="skill-card">SQL</div>
+        <div class="skill-card">React</div>
+        <div class="skill-card">HTML</div>
+        <div class="skill-card">CSS</div>
+        <div class="skill-card">Jupyter Notebook</div>
+        <div class="skill-card">AutoCAD</div>
+        <div class="skill-card">Inventor</div>
+      </div>
+      <!-- Other Skills Card -->
+      <div class="other-skills">
+        <h3>Other Skills</h3>
+        <p>Networking, Customer Experience, Teamwork, Innovation, Time Management</p>
+      </div>
+    </div>
+  </section>
+  
+<!-- Contact Section -->
+<section id="contact">
+    <div class="section-container">
+      <h2>Contact</h2>
+      <div class="contact-card">
+        <form id="contact-form">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="user_name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="user_email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+        <div id="form-response"></div>
+      </div>
+    </div>
+  </section>
+      </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <p>© 2025 Zuhair Abbas. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+
+  <script>
+    particlesJS("particles-js", {
+        particles: {
+            number: {
+                value: 80,       // Number of particles
+                density: {
+                    enable: true,
+                    value_area: 800
+                }
+            },
+            color: {
+                value: "#ffffff" // Particle color (white)
+            },
+            shape: {
+                type: "circle",  // Particle shape (circle, edge, triangle, polygon, star, image)
+                stroke: {
+                    width: 0,
+                    color: "#000000"
+                }
+            },
+            opacity: {
+                value: 0.5,
+                random: true
+            },
+            size: {
+                value: 4,
+                random: true
+            },
+            line_linked: {
+                enable: true,    // Connect particles with lines
+                distance: 150,
+                color: "#ffffff",
+                opacity: 0.4,
+                width: 1
+            },
+            move: {
+                enable: true,
+                speed: 3,       // Speed of particle movement
+                direction: "none",
+                random: false,
+                straight: false,
+                out_mode: "out"
+            }
+        },
+        interactivity: {
+            detect_on: "canvas",
+            events: {
+                onhover: {
+                    enable: true,
+                    mode: "grab" // Particles grab when mouse hovers
+                },
+                onclick: {
+                    enable: true,
+                    mode: "push" // Particles push away when clicked
+                }
+            },
+            modes: {
+                grab: {
+                    distance: 140,
+                    line_linked: {
+                        opacity: 1
+                    }
+                },
+                bubble: {
+                    distance: 200,
+                    size: 4,
+                    duration: 2
+                },
+                repulse: {
+                    distance: 100,
+                    duration: 0.4
+                },
+                push: {
+                    particles_nb: 4
+                },
+                remove: {
+                    particles_nb: 2
+                }
+            }
+        },
+        retina_detect: true // Retina display support
+    });
+    </script>    
+<script type="text/javascript">
+    (function(){
+        emailjs.init("YOUR_USER_ID"); // Replace YOUR_USER_ID with your actual EmailJS user ID
+    })();
+  </script>  
+</body>
+</html>

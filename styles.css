@@ -364,7 +364,7 @@ footer {
   
   /* Text styling */
   .about-text {
-    background: #2a2a4a;
+    background: transparent !important; /* Ensure no background covers particles */
     border: 2px solid #ff9800;
     border-radius: 10px;
     padding: 20px;
@@ -702,7 +702,9 @@ html {
 
 /* Container for About Section */
 .about-container {
-    display: flex;
+  position: relative; /* Ensures content is on top */
+  z-index: 2;
+  display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -996,7 +998,6 @@ html {
 
 /* About Section */
 #about {
-  background: #1a1a2e;  /* Dark background to match your theme */
   padding: 60px 20px;
   text-align: center;
 }

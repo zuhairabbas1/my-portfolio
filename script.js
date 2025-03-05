@@ -28,4 +28,29 @@ document.getElementById('contact-form').addEventListener('submit', function(even
           console.error('EmailJS Error:', error);
       });
   });
-  
+
+  // Select all sections that you want to animate
+const sections = document.querySelectorAll("section");
+
+// Options for the IntersectionObserver
+const options = {
+    threshold: 0.3, // Trigger when 30% of the section is in view
+};
+
+// Callback function to add the 'fade-in' class
+const observerCallback = (entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('fade-in'); // Add class to trigger animation
+            observer.unobserve(entry.target); // Stop observing after animation triggers
+        }
+    });
+};
+
+// Create an IntersectionObserver instance
+const observer = new IntersectionObserver(observerCallback, options);
+
+// Observe each section
+sections.forEach(section => {
+    observer.observe(section);
+});
